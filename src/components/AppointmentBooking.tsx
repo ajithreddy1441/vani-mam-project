@@ -34,7 +34,7 @@ const AppointmentBooking = () => {
   const sendEmail = () => {
     emailjs.send(
       "service_lfdnad2",  // Replace with your EmailJS Service ID
-      "template_z9v8gub", // Replace with your EmailJS Template ID
+      "template_u2cys4k", // Replace with your EmailJS Template ID
       {
         name: formData.name,
         email: formData.email,
@@ -42,7 +42,7 @@ const AppointmentBooking = () => {
         date: formData.date ? format(formData.date, "PPP") : "Not Selected",
         time: formData.time
       },
-      "X6D0kN1K9d5xs8n4a" // Replace with your EmailJS Public Key
+      "octSxKxyxTdgqfLgy" // Replace with your EmailJS Public Key
     )
     .then(() => {
       console.log("Email sent successfully!");
